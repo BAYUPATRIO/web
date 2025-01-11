@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Kami - Apotek Dubai</title>
+    <link rel="stylesheet" href="../css/panduan.css">
+</head>
+<body>
+    <header>
+        <table>
+        <div class="logo">Apotek Dubai</div>
+        <div style="margin-bottom: 15px; text-align: center;">
+            <form method="GET" action="produk.php">
+                <input
+                    type="text"
+                    name="query"
+                    placeholder="Cari produk"
+                    style="width: 70%; padding: 10px; border: 1px solid #ddd; border-radius: 5px; outline: none;"
+                    value=""
+                />
+                <button type="submit" style="padding: 10px 20px; background-color: #007BFF; color: #fff; border: none; border-radius: 5px; cursor: pointer;">
+                    Cari
+                </button>
+            </form>
+        </div>
+                <nav>
+                    <a href="home.php">Home</a>
+                    <a href="produk.php">Produk</a>
+                    <a href="panduan.html">Panduan</a>
+                </nav>
+                <div>
+                <a href="../logout.php" class="button">Logout</a>
+                </div>
+</table>
+    </header>
+
+    <div class="contact-section">
+        <h1>Hubungi Kami</h1>
+        <p>Jika Anda memiliki pertanyaan atau memerlukan bantuan, jangan ragu untuk menghubungi kami melalui form di bawah ini.</p>
+
+        <div class="contact-container">
+            <!-- Form Kontak -->
+            <form class="../pelangan.php" method="POST">
+                <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required>
+
+                <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required>
+
+                <textarea id="pesan" name="pesan" rows="5" placeholder="Tulis pesan Anda di sini..." required></textarea>
+
+                <button type="submit" class="btn btn-primary">Kirim</button>
+            </form>
+
+            <!-- Detail Kontak -->
+            <div class="contact-details">
+                <h3>Detail Kontak</h3>
+                <p><b>Alamat:</b> Jl. Dubai No. 123, Jakarta</p>
+                <p><b>Telepon:</b> +62 812 7564 8770</p>
+                <p><b>Email:</b> info@apotekdubai.com</p>
+                <h3>Lokasi Kami</h3>
+                <div class="map">
+                    <!-- Google Maps Embed -->
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.83544670336!2d106.8287184158764!3d-6.175392295535437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5e4b59cbefb%3A0xb31715b1ec5a1254!2sJakarta!5e0!3m2!1sen!2sid!4v1619170342390!5m2!1sen!2sid" 
+                        width="100%" 
+                        height="250" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Apotek Dubai. Semua Hak Dilindungi.</p>
+        <a href="privasi.html">Privasi</a> | <a href="syarat.html">Syarat dan Ketentuan</a>
+    </footer>
+</body>
+</html>
